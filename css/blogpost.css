@@ -1,0 +1,38 @@
+@import "clear.css";
+@import "style-design.css";
+
+body {
+    display: grid;
+    height: 95%;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 12% 20% 40% 10%;
+    grid-template-areas:
+    "hd hd hd hd"
+    "as as as as"
+    "sec sec sec sec"
+    "soc soc soc soc";
+    margin: 2%;
+}
+
+header {
+    grid-area: hd;
+}
+
+
+aside {
+    grid-area: as;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    grid-area: sec;
+    display: flex;
+    flex-direction: column;
+}
+
+.SocialSharing {
+    grid-area: soc;
+    display: flex;
+    flex-direction: row;
+}

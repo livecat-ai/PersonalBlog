@@ -61,7 +61,6 @@ section {
     grid-area i6;
 }
 
-
 footer {
     grid-area: ft;
     border-top: solid 1px black;

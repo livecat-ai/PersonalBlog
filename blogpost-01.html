@@ -16,32 +16,41 @@
     <header>
         <h1>A First Time For Everything</h1>
         <nav>
-            <a href="index.html">Home</a>
+            <button>
+                <a href="index.html">Home</a>
+            </button>
         </nav>
     </header>
-    <aside>
-        <h2>About the author</h2>
-        <p>John Lockwood is a freelance visual effects artist
-             working in the film and TV industry.</p>
-        <img src = "images/author.jpg" alt="The Author">
-    </aside>
-    <section>
-        <card>
-            <img src="images/Turtle-diving.jpeg" alt="Diver with a turtle">
-        </card>
-        <div id="main_text">
-            <h2>Learing to Dive in Aqaba, Jordan</h2>
-            <p>I sudenly found myself with a week off while working in Jordan.
-                After a bit of research I booked myself on the 4 hour bus journey from Amman to Aqaba and signed up for
-                a Padi diving course at a local diving school. 
-            </p>
-            <p>
-                The next morning I turned up for my first lesson. No need for the pool work here.
-                After a thorough briefing it was straight into the red sea for my first ever dive.
-                There was so much to see. Like diving in a huge tropical aquarium. I was hooked.
-            </p>
-        </div>
-    </section>
+
+    <div class="main">
+        <section class="blog-content">
+            <card>
+                <img src="images/Turtle-diving.jpeg" alt="Diver with a turtle">
+                <figcaption>Sea life in the gulf of Aqaba</figcaption>
+            </card>
+            
+            <div id="main-text">
+                <h2>Learing to Dive in Aqaba, Jordan</h2>
+                <p>I sudenly found myself with a week off while working in Jordan.
+                    After a bit of research I booked myself on the <u>4 hour bus journey</u> from Amman to Aqaba and signed up for
+                    a Padi diving course at a local diving school.
+                </p>
+                <p>
+                    The next morning I turned up for my first lesson. <em>No need for the pool work here</em>.
+                    After a thorough briefing it was straight into the red sea for my first ever dive.
+                    There was so much to see. Like diving in a huge tropical aquarium. <b>I was hooked</b>.
+                </p>
+                <blockquote><em>"Some of the best dives we have done!"</em></blockquote>
+            </div>
+        </section>
+        <aside class="about-author">
+            <h2>About the author</h2>
+            <p>John Lockwood is a freelance visual effects artist
+                working in the film and TV industry.</p>
+            <img src = "images/author.jpg" alt="The Author">
+        </aside>
+    </div>
+
     <footer class="SocialSharing">
         <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
         <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>

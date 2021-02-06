@@ -1,0 +1,46 @@
+@media (min-width: 800px) {
+
+    body {
+        display: grid;
+        width: 98%;
+        height: 100%;
+        grid-template-columns: repeat(8, 12vw);
+        grid-template-rows: 16% 8% 83% 3%;
+        grid-template-areas: 
+            "hd hd hd hd hd hd hd hd"
+            "sm sm sm sm sm sm sm sm"
+            "mn mn mn mn mn mn mn mn"
+            "ft ft ft ft ft ft ft ft";
+        margin: 2%;
+        font-size: 1.5em;
+    } 
+
+    section {
+        grid-area: mn;
+        display: grid;
+        grid-template-columns: repeat(3, 32%);
+        grid-template-rows: 49% 49%;
+        grid-area: 
+        "i1 i2 i3"
+        "i4 i5 i6";
+    }
+}
+
+@media (min-width: 1200px) {
+
+    body {
+        font-size: 2em;
+    }
+
+    
+@media (min-width: 1500px) {
+
+    body {
+        font-size: 3em;
+    }
+
+    aside img {
+        width: 400px;
+        height: 400px;
+    }
+}

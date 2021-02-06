@@ -1,0 +1,83 @@
+@import "clear.css";
+@import "style-design.css";
+@import "blog-post-responsive.css";
+
+body {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 8% 90% 6%;
+    grid-template-areas:
+    "hd hd hd hd"
+    "main main main main"
+    "soc soc soc soc";
+    margin: 2%;
+}
+
+header {
+    grid-area: hd;
+}
+
+header button {
+    border: none; 
+}
+
+
+.main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 70% 30%;
+    grid-template-areas:
+    "con con con con"
+    "as as as as";
+    margin: 3%;
+}
+
+.blog-content {
+    grid-area: con;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 5%;
+}
+
+.blog-content img {
+    width: 300px;
+    height: 300px;
+}
+
+
+aside {
+    grid-area: as;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+aside {
+    padding: 3%;
+    padding-bottom: 10%;
+}
+
+aside img {
+    width: 200px;
+    height: 200px;
+}
+
+
+footer {
+    margin: 0% 5% 0% 5%;
+    grid-area: soc;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-end;
+    border-top: solid 1px rgb(0, 0, 0);
+}
+
+footer a {
+    margin-left: 5%;
+}
+
